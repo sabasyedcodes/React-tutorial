@@ -3,10 +3,10 @@ import Fruit from "./Fruit";
 export default function Fruits() {
   //const fruits = ["Apple", "Mango", "Banana", "Strawberry"];
   const fruits = [
-    { name: "Apple", price: 10, emoji: "🍎" },
-    { name: "Banana", price: 2, emoji: "🍌" },
-    { name: "Mango", price: 7, emoji: "🥭" },
-    { name: "Strawberry", price: 15, emoji: "🍓" },
+    { name: "Apple", price: 10, emoji: "🍎", soldout: false },
+    { name: "Banana", price: 2, emoji: "🍌", soldout: true },
+    { name: "Mango", price: 7, emoji: "🥭", soldout: false },
+    { name: "Strawberry", price: 15, emoji: "🍓", soldout: true },
   ];
   return (
     <div>
@@ -21,6 +21,7 @@ export default function Fruits() {
             emoji={fruit.emoji}
             name={fruit.name}
             price={fruit.price}
+            soldout={fruit.soldout}
           />
         ))}
       </ul>
