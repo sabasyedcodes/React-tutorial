@@ -12,10 +12,12 @@ function displayMessage(){
 {
   // function Hello(props){...}
 }
-function Hello({name,message,emoji}) {
+//function Hello({name,message,emoji,seatNumbers}) {
   /*return <h1>Hello from a component !</h1> <h1>wow!</h1>; this will show error so we use it in this way . if we want to use multiple jsx then we write that in this way down below */
   /* destructuring the props 
   const {name,message} = props; */
+
+function Hello({person}){
   return (
     <div>
       {
@@ -24,9 +26,21 @@ function Hello({name,message,emoji}) {
       {
         //<h1>{props.message} {props.name}</h1>
       }
-      <h1>{message} {emoji} {name} </h1>
+      {
+        /*<h1>{message} {emoji} {name} {seatNumbers} </h1>*/
+      }
+      {
+        /*<h1>
+        {props.person.message} {props.person.emoji} {props.person.name} {props.person.seatNumbers}
+      </h1>
+      */}
+      {person.message} {person.emoji} {person.name} {person.seatNumber}
+
     </div>
   );
 }
+
+
+
 
 export default Hello;
