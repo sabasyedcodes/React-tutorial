@@ -1,3 +1,4 @@
+import Fruits from "./components/Fruits";
 import Hello from "./components/Hello";
 function App() {
   const person = {
@@ -8,7 +9,11 @@ function App() {
   };
   return (
     <div className="App">
-      <Hello person = {person} />
+      {
+        /*<Hello person = {person} />
+        */
+      }
+      <Fruits />
     </div>
   );
 }
