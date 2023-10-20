@@ -7,13 +7,18 @@ export default function ConditionalComponent() {
   //let messageTwo = <h1>This is message 2</h1>;
   // resolving we two return stmts in a condition with single return stmt down below
   let message;
-  const display = false; //true;
+  const display = true; //true;
+  // teranary operator
+  //return display ? <h1>Message 1</h1> : <h1>Message 2</h1>;
+  return display ? <Welcome /> : <Code />;
+  /*
   if (display) {
     message = <h1>This is message 1</h1>;
   } else {
     message = <h1>This is message 2</h1>;
   }
   return message;
+  */
   /*
   const display = false;
   if (display) {
