@@ -16,13 +16,14 @@ export default function Fruits() {
           //   {fruit.emoji}{fruit.name} ${fruit.price}
           // </li>
 
-          <Fruit key={fruit.name} emoji={fruit.emoji} name={fruit.name} price={fruit.price}  />
-
+          <Fruit
+            key={fruit.name}
+            emoji={fruit.emoji}
+            name={fruit.name}
+            price={fruit.price}
+          />
         ))}
       </ul>
     </div>
   );
-
-
-
 }
