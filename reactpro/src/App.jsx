@@ -14,11 +14,11 @@ function App() {
         /*<Hello person = {person} />
         */
       }
+      <Fruits />
       {
-        /*<Fruits />
-        */
+        /*<ConditionalComponent />*/
       }
-      <ConditionalComponent />
+
     </div>
   );
 }
