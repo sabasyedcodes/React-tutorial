@@ -1,5 +1,6 @@
 
 import Counter from "./components/Counter";
+import Form from "./components/form";
 import Message from "./components/message";
 function App() {
   const person = {
@@ -10,7 +11,7 @@ function App() {
   };
   return (
     <div className="App">
-      <Counter />
+      <Form />
     </div>
   );
 }
