@@ -1,6 +1,6 @@
-import Fruits from "./components/Fruits";
-import Hello from "./components/Hello";
-import ConditionalComponent from "./components/conditionalComponent";
+
+import Counter from "./components/Counter";
+import Message from "./components/message";
 function App() {
   const person = {
     name:"Rob",
@@ -10,15 +10,7 @@ function App() {
   };
   return (
     <div className="App">
-      {
-        /*<Hello person = {person} />
-        */
-      }
-      <Fruits />
-      {
-        /*<ConditionalComponent />*/
-      }
-
+      <Counter />
     </div>
   );
 }
